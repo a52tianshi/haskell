@@ -20,3 +20,8 @@ print(92 `div` 10)
 let doubleMe x = x + x
 
 print(doubleMe 45)
+
+let lostNumbers = [4,8,15,16,23,42]
+let a = lostNumbers ++ [4,5]
+print(lostNumbers)
+print(a)
