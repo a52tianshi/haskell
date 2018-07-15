@@ -25,3 +25,5 @@ let lostNumbers = [4,8,15,16,23,42]
 let a = lostNumbers ++ [4,5]
 print(lostNumbers)
 print(a)
+let rightTriangles = [ (a,b,c) | c <- [1..30], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2]  
+print(rightTriangles)
