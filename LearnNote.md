@@ -8,4 +8,7 @@ list use  ':'  '++'  '!!'  operater (':'  is very special , it put param1 on the
     considering almost implemention for array ,I'm puzzled.
 tuple   like tuple in python
 
-list comprehension is so niubi!
+list comprehension is so niubi!  
+# chapter2  
+the symbol '=>' is just a description  
+**Eq Ord** are  **typeclasses**
