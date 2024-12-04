@@ -28,5 +28,13 @@ main = do
     let a = lostNumbers ++ [4,5]
     print lostNumbers
     print a
+    -- haskell list is homogenous
     let rightTriangles = [ (a,b,c) | c <- [1..30], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2]  
     print rightTriangles
+    let acuteTriangle = [ (a,b,c) | c <- [1..10], b <- [1..c], a <- [1..b], a^2 + b^2 > c^2]
+    print acuteTriangle
+    let obtuseTriangle = [ (a,b,c) | c <- [1..10], b <- [1..c], a <- [1..b], a^2 + b^2 < c^2 && a + b > c]
+    print obtuseTriangle
+    -- 函数式编程思路: 先取一个集合, 然后对集合中的每个元素进行操作, 最后返回一个新的集合
+    -- 有点像 map reduce: 先取一个初始的集合并将其变形,随后持续地对这个集合进行变形,直到得到最终结果
+
