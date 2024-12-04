@@ -1,5 +1,7 @@
 module Main where
 
+import Func(bmiTell,bmiTellBetter)
+
 main :: IO()
 main = do
     let lucky :: Int -> String
@@ -40,4 +42,14 @@ main = do
     print (tell [1,2,3,4])
     print (tell [True , False])
 
-    --As 模式 (as pattern)  todo
+    --As 模式 (as pattern)  (感觉是个语法糖)
+    let isPalindrome :: Eq a => [a] -> Bool
+        isPalindrome xs@(x:_) = xs == reverse xs
+        isPalindrome [] = True  -- 空列表是回文
+
+    print (isPalindrome [1,2,3])
+    print (isPalindrome [1,2,1])
+    print (isPalindrome "")
+
+    print (bmiTellBetter 85 1.90)
+    print (bmiTellBetter 68 1.65)
