@@ -53,3 +53,19 @@ main = do
 
     print (bmiTellBetter 85 1.90)
     print (bmiTellBetter 68 1.65)
+    
+    -- describeList :: [a] -> String
+    let describeList :: [a] -> String
+        describeList xs = "The list is " ++ case xs of [] -> "empty."
+                                                       [x] -> "a singleton list."
+                                                       xs -> "a longer list."
+    print (describeList [1])
+
+    -- where
+    let describeListWhere :: [a] -> String
+        describeListWhere xs = "The list is " ++ what xs
+            where what [] = "empty."
+                  what [x] = "a singleton list."
+                  what xs = "a longer list."
+
+    print (describeListWhere [1,2,3])
