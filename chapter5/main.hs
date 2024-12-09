@@ -32,3 +32,14 @@ main = do
 
     --lambda 就是一次性的匿名函数
 
+
+    -- sum'
+    print (sum' [3,5,2,1])
+
+
+    -- 函数应用符号 $
+    -- 用 $ 来避免括号
+    print (sum (filter (>10) (map (*2) [2..10])))
+    print (map ($ 3) [(4+), (10*), (^2), sqrt])
+    -- . 函数组合
+    print (sum . replicate 5 $ max 6.7 8.9)
