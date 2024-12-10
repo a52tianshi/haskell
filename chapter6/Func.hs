@@ -1,4 +1,4 @@
-module Func where
+module Func(encode,decode) where
 
 import Data.Char
 

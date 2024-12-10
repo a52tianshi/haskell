@@ -20,3 +20,10 @@ main = do
     print (encode 3 "Heeeeey")
     print (decode 3 "Heeeeey")
 
+    let ori = "I'm a little teapot"
+    let enc = encode 3 ori
+    let dec = decode 3 enc
+    print ori
+    print enc
+    print dec
+
